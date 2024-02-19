@@ -25,8 +25,6 @@ To get started with D.A.V.I.D, follow these simple setup instructions.
 2. Navigate to the D.A.V.I.D directory:
 
 `cd david`
-markdown
-
 
 3. Install the required packages:
 
