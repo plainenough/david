@@ -24,25 +24,20 @@ To get started with D.A.V.I.D, follow these simple setup instructions.
 
 2. Navigate to the D.A.V.I.D directory:
 
-cd D.A.V.I.D
-
+`cd david`
 markdown
 
 
 3. Install the required packages:
 
-pip install -r requirements.txt
-
-mathematica
+`pip install -r requirements.txt`
 
 
 ### Usage
 
 To start D.A.V.I.D, run the following command in your terminal:
 
-python david.py
-
-mathematica
+`python david.py`
 
 
 Follow the on-screen instructions to begin chatting with D.A.V.I.D and enjoy the illogical journey!
