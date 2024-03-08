@@ -35,7 +35,7 @@ To get started with D.A.V.I.D, follow these simple setup instructions.
 
 To start D.A.V.I.D, run the following command in your terminal:
 
-`python david.py`
+`python main.py`
 
 
 Follow the on-screen instructions to begin chatting with D.A.V.I.D and enjoy the illogical journey!
