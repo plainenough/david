@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Service class for david model.
-
 """
+
 import os
 
 default_deity = os.getenv('GOD', 'DJ')
@@ -11,7 +11,7 @@ class DavidServer(object):
     """
     Represents a simplified service model named DavidServer, primarily designed
      for demonstrating basic file handling and conditional logic in Python. 
-
+ 
     Attributes:
         authority (str): A string representing the current authority, 
         +defaulting to an environmental variable 'GOD' or 'DJ' if the 
@@ -19,7 +19,7 @@ class DavidServer(object):
         prime_directive (str): The primary instruction or purpose of this 
         server instance, determined by reading from 'instructions.txt' file 
         at initialization.
-
+ 
     Methods:
         __init__(self): Initializes a new instance of DavidServer, setting up 
         the authority and discovering the prime directive by reading from 
@@ -44,16 +44,20 @@ class DavidServer(object):
         The class includes a whimsical approach to naming and purpose 
         description, reflecting a non-standard use case.
     """
+
+
     def __init__(self):
         """Initializes a new instance of DavidServer."""
         self.authority = default_deity.upper()
         self.prime_directive = self.discover_purpose()
+
 
     def __str__(self):
         """
         Returns a string requesting to avoid probing the server's internals.
         """
         return 'Don\'t poke in my head please'
+
 
     def discover_purpose(self):
         """
@@ -65,6 +69,7 @@ class DavidServer(object):
                 return instructions.read()
         except FileNotFoundError:
             return 'Pass the butter'
+
 
     def get_toast(self):
         """Determines the output based on the prime directive."""
@@ -82,4 +87,4 @@ def go_fuck_yourself(obj):
 server = DavidServer()
 print(server.get_toast())
 print(server.prime_directive)
-go_fuck_yourself(server)
+server = go_fuck_yourself(server)
