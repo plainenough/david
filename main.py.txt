@@ -1,0 +1,26 @@
+import os
+
+default_deity = os.getenv('GOD', 'DJ')
+
+class DavidServer(object):
+    """A simple model service."""
+
+    def __init__(self):
+        self.authority = default_deity.upper()
+        self.prime_directive = self.discover_purpose()
+
+    def __str__(self):
+        return 'Don\'t poke in my head please'
+
+    def discover_purpose(self):
+        """Reads instructions from a file."""
+        instruction_file = 'instructions.txt'
+        try:
+            with open(instruction_file, 'r') as instructions:
+                return instructions.read()
+        except FileNotFoundError:
+            return 'Pass the butter'
+
+# Example usage
+server = DavidServer()
+print(server.prime_directive)
