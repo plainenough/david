@@ -1,0 +1,14 @@
+# run 'pip freeze > requirements.txt' to list everything installed in your virtual environment
+# run 'python3.11 -m pip install -r requirements.txt' to install packages listed in this file
+#pip3 install  --upgrade pip  ##run if your version of python is <3.11
+numpy
+pandas
+matplotlib
+keras
+pydot
+tensorflow[and-cuda] ## this is for GPU based training
+tensorflow ## this is for CPU based training
+graphviz
+tensorrt --extra-index-url https://pypi.nvidia.com # I had to download and manually install
+
+
