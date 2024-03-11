@@ -1,0 +1,8 @@
+[flake8]
+extend-ignore = E203,F401
+exclude =
+    .gitignore
+
+count = true
+statistics = true
+max-line-length = 120
