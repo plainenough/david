@@ -32,8 +32,6 @@
 ## 6. Optimize for Performance
 
 - Use appropriate data structures and algorithms that fit your use case.
-- Consider using `generators` or `list comprehensions` for better memory management and speed.
-- Profile your code using tools like `cProfile` to identify bottlenecks.
 
 ## 7. Security Practices
 
@@ -58,4 +56,3 @@
 - Use tools like [Swagger](https://swagger.io/) or [Redoc](https://redoc.ly/) to create interactive API documentation.
 - Ensure your API documentation is up-to-date and includes examples of requests and responses.
 
-Following these best practices will help you build robust, efficient, and maintainable Python APIs that are a pleasure to use and develop further.
